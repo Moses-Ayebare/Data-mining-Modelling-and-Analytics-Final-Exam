@@ -384,5 +384,4 @@ st.write("""
     - ROC-AUC: 89.42%
     
     **Built by:** Ayebare Moses
-    **Course:** Data Mining, Modelling & Analytics (DSC8307)
 """)
