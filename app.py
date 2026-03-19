@@ -1,3 +1,21 @@
+import nltk
+import os
+
+# Download required NLTK data
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt', quiet=True)
+
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords', quiet=True)
+
+try:
+    nltk.data.find('sentiment/vader_lexicon')
+except LookupError:
+    nltk.download('vader_lexicon', quiet=True)
 import streamlit as st
 import pandas as pd
 import numpy as np
